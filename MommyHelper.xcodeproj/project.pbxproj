@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089881E42FD1100231BA5 /* AppDelegate.swift */; };
 		DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40898A1E42FD1100231BA5 /* FirstViewController.swift */; };
-		DB40898D1E42FD1100231BA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40898C1E42FD1100231BA5 /* SecondViewController.swift */; };
 		DB4089901E42FD1100231BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB40898E1E42FD1100231BA5 /* Main.storyboard */; };
 		DB4089921E42FD1100231BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4089911E42FD1100231BA5 /* Assets.xcassets */; };
 		DB4089951E42FD1100231BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4089931E42FD1100231BA5 /* LaunchScreen.storyboard */; };
 		DB4089A01E42FD1100231BA5 /* MommyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40899F1E42FD1100231BA5 /* MommyHelperTests.swift */; };
 		DB4089AB1E42FD1100231BA5 /* MommyHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089AA1E42FD1100231BA5 /* MommyHelperUITests.swift */; };
+		DB4089BB1E43B54800231BA5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BA1E43B54800231BA5 /* Feed.swift */; };
+		DB4089BD1E44056200231BA5 /* FeedHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BC1E44056200231BA5 /* FeedHistoryTableViewController.swift */; };
+		DB4089BF1E44071700231BA5 /* FeedHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */; };
+		DB4089C31E440BCF00231BA5 /* FeedsByDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089C21E440BCF00231BA5 /* FeedsByDay.swift */; };
+		DB4089C91E45609C00231BA5 /* DayHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		DB4089851E42FD1100231BA5 /* MommyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MommyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4089881E42FD1100231BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB40898A1E42FD1100231BA5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DB40898C1E42FD1100231BA5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DB40898F1E42FD1100231BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4089911E42FD1100231BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4089941E42FD1100231BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		DB4089A61E42FD1100231BA5 /* MommyHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MommyHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4089AA1E42FD1100231BA5 /* MommyHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MommyHelperUITests.swift; sourceTree = "<group>"; };
 		DB4089AC1E42FD1100231BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB4089BA1E43B54800231BA5 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		DB4089BC1E44056200231BA5 /* FeedHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHistoryTableViewController.swift; sourceTree = "<group>"; };
+		DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		DB4089C21E440BCF00231BA5 /* FeedsByDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsByDay.swift; sourceTree = "<group>"; };
+		DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				DB4089881E42FD1100231BA5 /* AppDelegate.swift */,
-				DB40898A1E42FD1100231BA5 /* FirstViewController.swift */,
-				DB40898C1E42FD1100231BA5 /* SecondViewController.swift */,
+				DB4089C41E440BDA00231BA5 /* Model */,
+				DB4089C61E440BFB00231BA5 /* View */,
+				DB4089C71E440C0F00231BA5 /* ViewController */,
 				DB40898E1E42FD1100231BA5 /* Main.storyboard */,
 				DB4089911E42FD1100231BA5 /* Assets.xcassets */,
 				DB4089931E42FD1100231BA5 /* LaunchScreen.storyboard */,
@@ -126,6 +135,33 @@
 				DB4089AC1E42FD1100231BA5 /* Info.plist */,
 			);
 			path = MommyHelperUITests;
+			sourceTree = "<group>";
+		};
+		DB4089C41E440BDA00231BA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089BA1E43B54800231BA5 /* Feed.swift */,
+				DB4089C21E440BCF00231BA5 /* FeedsByDay.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DB4089C61E440BFB00231BA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DB4089C71E440C0F00231BA5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */,
+				DB4089BC1E44056200231BA5 /* FeedHistoryTableViewController.swift */,
+				DB40898A1E42FD1100231BA5 /* FirstViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB40898D1E42FD1100231BA5 /* SecondViewController.swift in Sources */,
+				DB4089BD1E44056200231BA5 /* FeedHistoryTableViewController.swift in Sources */,
+				DB4089BF1E44071700231BA5 /* FeedHistoryTableViewCell.swift in Sources */,
+				DB4089C91E45609C00231BA5 /* DayHistoryTableViewController.swift in Sources */,
+				DB4089BB1E43B54800231BA5 /* Feed.swift in Sources */,
 				DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */,
 				DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */,
+				DB4089C31E440BCF00231BA5 /* FeedsByDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
