@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089881E42FD1100231BA5 /* AppDelegate.swift */; };
+		DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40898A1E42FD1100231BA5 /* FirstViewController.swift */; };
+		DB40898D1E42FD1100231BA5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40898C1E42FD1100231BA5 /* SecondViewController.swift */; };
+		DB4089901E42FD1100231BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB40898E1E42FD1100231BA5 /* Main.storyboard */; };
+		DB4089921E42FD1100231BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4089911E42FD1100231BA5 /* Assets.xcassets */; };
+		DB4089951E42FD1100231BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4089931E42FD1100231BA5 /* LaunchScreen.storyboard */; };
+		DB4089A01E42FD1100231BA5 /* MommyHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40899F1E42FD1100231BA5 /* MommyHelperTests.swift */; };
+		DB4089AB1E42FD1100231BA5 /* MommyHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089AA1E42FD1100231BA5 /* MommyHelperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB40899C1E42FD1100231BA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB40897D1E42FD1000231BA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4089841E42FD1000231BA5;
+			remoteInfo = MommyHelper;
+		};
+		DB4089A71E42FD1100231BA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB40897D1E42FD1000231BA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4089841E42FD1000231BA5;
+			remoteInfo = MommyHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB4089851E42FD1100231BA5 /* MommyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MommyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4089881E42FD1100231BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB40898A1E42FD1100231BA5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DB40898C1E42FD1100231BA5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DB40898F1E42FD1100231BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB4089911E42FD1100231BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB4089941E42FD1100231BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB4089961E42FD1100231BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB40899B1E42FD1100231BA5 /* MommyHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MommyHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB40899F1E42FD1100231BA5 /* MommyHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MommyHelperTests.swift; sourceTree = "<group>"; };
+		DB4089A11E42FD1100231BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB4089A61E42FD1100231BA5 /* MommyHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MommyHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4089AA1E42FD1100231BA5 /* MommyHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MommyHelperUITests.swift; sourceTree = "<group>"; };
+		DB4089AC1E42FD1100231BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB4089821E42FD1000231BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4089981E42FD1100231BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4089A31E42FD1100231BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB40897C1E42FD1000231BA5 = {
+			isa = PBXGroup;
+			children = (
+				DB4089871E42FD1100231BA5 /* MommyHelper */,
+				DB40899E1E42FD1100231BA5 /* MommyHelperTests */,
+				DB4089A91E42FD1100231BA5 /* MommyHelperUITests */,
+				DB4089861E42FD1100231BA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB4089861E42FD1100231BA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089851E42FD1100231BA5 /* MommyHelper.app */,
+				DB40899B1E42FD1100231BA5 /* MommyHelperTests.xctest */,
+				DB4089A61E42FD1100231BA5 /* MommyHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB4089871E42FD1100231BA5 /* MommyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089881E42FD1100231BA5 /* AppDelegate.swift */,
+				DB40898A1E42FD1100231BA5 /* FirstViewController.swift */,
+				DB40898C1E42FD1100231BA5 /* SecondViewController.swift */,
+				DB40898E1E42FD1100231BA5 /* Main.storyboard */,
+				DB4089911E42FD1100231BA5 /* Assets.xcassets */,
+				DB4089931E42FD1100231BA5 /* LaunchScreen.storyboard */,
+				DB4089961E42FD1100231BA5 /* Info.plist */,
+			);
+			path = MommyHelper;
+			sourceTree = "<group>";
+		};
+		DB40899E1E42FD1100231BA5 /* MommyHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB40899F1E42FD1100231BA5 /* MommyHelperTests.swift */,
+				DB4089A11E42FD1100231BA5 /* Info.plist */,
+			);
+			path = MommyHelperTests;
+			sourceTree = "<group>";
+		};
+		DB4089A91E42FD1100231BA5 /* MommyHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089AA1E42FD1100231BA5 /* MommyHelperUITests.swift */,
+				DB4089AC1E42FD1100231BA5 /* Info.plist */,
+			);
+			path = MommyHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB4089841E42FD1000231BA5 /* MommyHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4089AF1E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelper" */;
+			buildPhases = (
+				DB4089811E42FD1000231BA5 /* Sources */,
+				DB4089821E42FD1000231BA5 /* Frameworks */,
+				DB4089831E42FD1000231BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MommyHelper;
+			productName = MommyHelper;
+			productReference = DB4089851E42FD1100231BA5 /* MommyHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB40899A1E42FD1100231BA5 /* MommyHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4089B21E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelperTests" */;
+			buildPhases = (
+				DB4089971E42FD1100231BA5 /* Sources */,
+				DB4089981E42FD1100231BA5 /* Frameworks */,
+				DB4089991E42FD1100231BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB40899D1E42FD1100231BA5 /* PBXTargetDependency */,
+			);
+			name = MommyHelperTests;
+			productName = MommyHelperTests;
+			productReference = DB40899B1E42FD1100231BA5 /* MommyHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB4089A51E42FD1100231BA5 /* MommyHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4089B51E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelperUITests" */;
+			buildPhases = (
+				DB4089A21E42FD1100231BA5 /* Sources */,
+				DB4089A31E42FD1100231BA5 /* Frameworks */,
+				DB4089A41E42FD1100231BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB4089A81E42FD1100231BA5 /* PBXTargetDependency */,
+			);
+			name = MommyHelperUITests;
+			productName = MommyHelperUITests;
+			productReference = DB4089A61E42FD1100231BA5 /* MommyHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB40897D1E42FD1000231BA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Priyanka Joshi";
+				TargetAttributes = {
+					DB4089841E42FD1000231BA5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KC2Y8TM6HZ;
+						ProvisioningStyle = Automatic;
+					};
+					DB40899A1E42FD1100231BA5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KC2Y8TM6HZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB4089841E42FD1000231BA5;
+					};
+					DB4089A51E42FD1100231BA5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KC2Y8TM6HZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB4089841E42FD1000231BA5;
+					};
+				};
+			};
+			buildConfigurationList = DB4089801E42FD1000231BA5 /* Build configuration list for PBXProject "MommyHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB40897C1E42FD1000231BA5;
+			productRefGroup = DB4089861E42FD1100231BA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB4089841E42FD1000231BA5 /* MommyHelper */,
+				DB40899A1E42FD1100231BA5 /* MommyHelperTests */,
+				DB4089A51E42FD1100231BA5 /* MommyHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB4089831E42FD1000231BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4089951E42FD1100231BA5 /* LaunchScreen.storyboard in Resources */,
+				DB4089921E42FD1100231BA5 /* Assets.xcassets in Resources */,
+				DB4089901E42FD1100231BA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4089991E42FD1100231BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4089A41E42FD1100231BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB4089811E42FD1000231BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB40898D1E42FD1100231BA5 /* SecondViewController.swift in Sources */,
+				DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */,
+				DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4089971E42FD1100231BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4089A01E42FD1100231BA5 /* MommyHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB4089A21E42FD1100231BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4089AB1E42FD1100231BA5 /* MommyHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB40899D1E42FD1100231BA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4089841E42FD1000231BA5 /* MommyHelper */;
+			targetProxy = DB40899C1E42FD1100231BA5 /* PBXContainerItemProxy */;
+		};
+		DB4089A81E42FD1100231BA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4089841E42FD1000231BA5 /* MommyHelper */;
+			targetProxy = DB4089A71E42FD1100231BA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB40898E1E42FD1100231BA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB40898F1E42FD1100231BA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB4089931E42FD1100231BA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB4089941E42FD1100231BA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB4089AD1E42FD1100231BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB4089AE1E42FD1100231BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB4089B01E42FD1100231BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KC2Y8TM6HZ;
+				INFOPLIST_FILE = MommyHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshi.priyanka.MommyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB4089B11E42FD1100231BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KC2Y8TM6HZ;
+				INFOPLIST_FILE = MommyHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshi.priyanka.MommyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DB4089B31E42FD1100231BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KC2Y8TM6HZ;
+				INFOPLIST_FILE = MommyHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshi.priyanka.MommyHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MommyHelper.app/MommyHelper";
+			};
+			name = Debug;
+		};
+		DB4089B41E42FD1100231BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KC2Y8TM6HZ;
+				INFOPLIST_FILE = MommyHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshi.priyanka.MommyHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MommyHelper.app/MommyHelper";
+			};
+			name = Release;
+		};
+		DB4089B61E42FD1100231BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KC2Y8TM6HZ;
+				INFOPLIST_FILE = MommyHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshi.priyanka.MommyHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MommyHelper;
+			};
+			name = Debug;
+		};
+		DB4089B71E42FD1100231BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KC2Y8TM6HZ;
+				INFOPLIST_FILE = MommyHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshi.priyanka.MommyHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MommyHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB4089801E42FD1000231BA5 /* Build configuration list for PBXProject "MommyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4089AD1E42FD1100231BA5 /* Debug */,
+				DB4089AE1E42FD1100231BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4089AF1E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4089B01E42FD1100231BA5 /* Debug */,
+				DB4089B11E42FD1100231BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB4089B21E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4089B31E42FD1100231BA5 /* Debug */,
+				DB4089B41E42FD1100231BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB4089B51E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4089B61E42FD1100231BA5 /* Debug */,
+				DB4089B71E42FD1100231BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB40897D1E42FD1000231BA5 /* Project object */;
+}
