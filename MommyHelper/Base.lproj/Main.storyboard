@@ -68,16 +68,16 @@
         <scene sceneID="l32-sZ-BLP">
             <objects>
                 <tableViewController id="aQN-6A-t8H" customClass="FeedHistoryTableViewController" customModule="MommyHelper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdJ-7m-nO0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdJ-7m-nO0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FeedHistoryTableViewCell" id="I1b-pH-0To" customClass="FeedHistoryTableViewCell" customModule="MommyHelper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FeedHistoryTableViewCell" rowHeight="48" id="I1b-pH-0To" customClass="FeedHistoryTableViewCell" customModule="MommyHelper" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I1b-pH-0To" id="eOf-3R-vlj">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THo-lY-sPa">
@@ -99,8 +99,6 @@
                                 <connections>
                                     <outlet property="dayLabel" destination="j2x-fj-20Q" id="Ixa-d9-Aqd"/>
                                     <outlet property="numberOfFeedsLabel" destination="THo-lY-sPa" id="e1A-0A-CLL"/>
-                                    <segue destination="ocZ-rz-GKk" kind="show" trigger="accessoryAction" id="5GY-Hj-38a"/>
-                                    <segue destination="ocZ-rz-GKk" kind="show" id="ggy-6f-s1J"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -110,6 +108,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="dNW-Ai-bry"/>
+                    <connections>
+                        <segue destination="ocZ-rz-GKk" kind="show" identifier="historyToDaySegue" id="2OH-Bp-75y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pr4-oc-KzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,7 +173,4 @@
             <point key="canvasLocation" x="749.60000000000002" y="390.85457271364322"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ggy-6f-s1J"/>
-    </inferredMetricsTieBreakers>
 </document>

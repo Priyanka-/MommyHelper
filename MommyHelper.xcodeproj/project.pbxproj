@@ -19,6 +19,7 @@
 		DB4089BF1E44071700231BA5 /* FeedHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */; };
 		DB4089C91E45609C00231BA5 /* DayHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */; };
 		DB4089CC1E459BB300231BA5 /* FeedPersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089CB1E459BB300231BA5 /* FeedPersister.swift */; };
+		DB4089CE1E47A37000231BA5 /* InMemoryFeedsManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089CD1E47A37000231BA5 /* InMemoryFeedsManipulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryTableViewController.swift; sourceTree = "<group>"; };
 		DB4089CB1E459BB300231BA5 /* FeedPersister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPersister.swift; sourceTree = "<group>"; };
+		DB4089CD1E47A37000231BA5 /* InMemoryFeedsManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryFeedsManipulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				DB4089CB1E459BB300231BA5 /* FeedPersister.swift */,
+				DB4089CD1E47A37000231BA5 /* InMemoryFeedsManipulator.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				DB4089BF1E44071700231BA5 /* FeedHistoryTableViewCell.swift in Sources */,
 				DB4089C91E45609C00231BA5 /* DayHistoryTableViewController.swift in Sources */,
 				DB4089CC1E459BB300231BA5 /* FeedPersister.swift in Sources */,
+				DB4089CE1E47A37000231BA5 /* InMemoryFeedsManipulator.swift in Sources */,
 				DB4089BB1E43B54800231BA5 /* Feed.swift in Sources */,
 				DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */,
 				DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */,

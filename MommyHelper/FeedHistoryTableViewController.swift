@@ -14,10 +14,17 @@ class FeedHistoryTableViewController : UITableViewController {
     //MARK: Properties
     
     var feedsByDay = [[Feed]]()
-    
+    var valueToPass = [Feed]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+      //  loadFeedHistory()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         loadFeedHistory()
+        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,6 +59,25 @@ class FeedHistoryTableViewController : UITableViewController {
         // Configure the cell...
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You selected cell #\(indexPath.row)!")
+        
+        // Get feeds
+        let indexPath = tableView.indexPathForSelectedRow!
+        valueToPass = feedsByDay[indexPath.row]
+        //TODO: should we do this async?
+        performSegue(withIdentifier: "historyToDaySegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "historyToDaySegue") {
+            // initialize new view controller and cast it as your view controller
+            let viewController = segue.destination as! DayHistoryTableViewController
+            // your new view controller should have property that will store passed value
+            viewController.feedsForDay = valueToPass
+        }
     }
     
     //MARK: Private Methods

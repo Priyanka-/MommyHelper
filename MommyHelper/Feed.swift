@@ -11,6 +11,9 @@ import os.log
 
 class Feed : NSObject, NSCoding {
     
+    //MARK: Max number of days worth of history
+    static let maxNumberOfDays = 7
+    
     //MARK: Archiving Paths
     
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!

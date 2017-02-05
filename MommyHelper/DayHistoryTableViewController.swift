@@ -10,14 +10,10 @@ import UIKit
 
 class DayHistoryTableViewController: UITableViewController {
 
+    //MARK: Properties
     var feedsForDay = [Feed]()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadDayHistory()
 
-    }
-
+    //MARK: Overridden methods
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,15 +42,4 @@ class DayHistoryTableViewController: UITableViewController {
         
         return cell
     }
-    
-    //MARK: Private Methods
-    
-    private func loadDayHistory() {
-        let feed1 = Feed(timeOfFeed : Date())
-        let oneHourAgo = Date(timeIntervalSinceNow: -3600)
-        let feed2 = Feed(timeOfFeed: oneHourAgo)
-        feedsForDay = [feed1, feed2]
-        
-    }
-
 }

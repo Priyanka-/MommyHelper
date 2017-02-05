@@ -26,7 +26,8 @@ class FirstViewController: UIViewController {
         
         let currentDate = Date()
         let feed = Feed.init(timeOfFeed: currentDate)
-        feedsByDay = feedPersister.addFeed(feed: feed, feeds: feedsByDay)
+        let feedsManipulator = InMemoryFeedsManipulator()
+        feedsByDay = feedsManipulator.addFeed(feed: feed, feeds: feedsByDay)
        
         feedPersister.saveFeeds(feeds: feedsByDay!)
         print(feedsByDay as Any)
