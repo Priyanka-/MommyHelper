@@ -7,32 +7,35 @@
 //
 
 import UIKit
+import os.log
 
 class FirstViewController: UIViewController {
     
-    var numberOfFeeds : Int = 0
-
+    var feedPersister = FeedPersister()
+    var feedsByDay : [Date : [Feed]]?
+    
     @IBOutlet weak var firstOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        feedsByDay = feedPersister.loadFeeds()
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        //TODO: record feed
-        recordFeed()
-        print("fed \(numberOfFeeds) times")
+        
+        let currentDate = Date()
+        let feed = Feed.init(timeOfFeed: currentDate)
+        feedsByDay = feedPersister.addFeed(feed: feed, feeds: feedsByDay)
+       
+        feedPersister.saveFeeds(feeds: feedsByDay!)
+        print(feedsByDay as Any)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-     func recordFeed() {
-        numberOfFeeds = numberOfFeeds + 1
-    }
-
+    
 }
 

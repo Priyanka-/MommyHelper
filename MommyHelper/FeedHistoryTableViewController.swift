@@ -7,12 +7,13 @@
 //
 
 import UIKit
+//TODO: reload this view everytime tab loads
 
 class FeedHistoryTableViewController : UITableViewController {
     
     //MARK: Properties
     
-    var feedsByDay = [FeedsByDay]()
+    var feedsByDay = [[Feed]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,15 +37,15 @@ class FeedHistoryTableViewController : UITableViewController {
         
         // Fetches the appropriate feed history for the data source layout.
         let feedsForDay = feedsByDay[indexPath.row]
-        if (feedsForDay.feeds.count > 0) {
-            let feed = feedsForDay.feeds[0]
-            let calendar = NSCalendar.current
+        if (feedsForDay.count > 0) {
+            let feed = feedsForDay[0]
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale.current
+            dateFormatter.dateStyle = DateFormatter.Style.short
             
-            let month = calendar.component(.month, from: feed.timeOfFeed)
-            let day = calendar.component(.day, from: feed.timeOfFeed)
-            cell.dayLabel.text = "\(day) \(month)"
+            cell.dayLabel.text = dateFormatter.string(from: feed.timeOfFeed)
             
-            cell.numberOfFeedsLabel.text = "\(feedsForDay.feeds.count) feeds"
+            cell.numberOfFeedsLabel.text = "\(feedsForDay.count) feeds"
 
         }
         
@@ -54,16 +55,14 @@ class FeedHistoryTableViewController : UITableViewController {
     }
     
     //MARK: Private Methods
-    
     private func loadFeedHistory() {
-        let feed1 = Feed(timeOfFeed : Date())
-        let oneHourAgo = Date(timeIntervalSinceNow: -3600)
-        let feed2 = Feed(timeOfFeed: oneHourAgo)
-        guard let feedsForToday = FeedsByDay(feeds : [feed1, feed2])
-            else {
-                fatalError("feedsForToday failed")
+        let feedPersister = FeedPersister()
+        let allFeeds = feedPersister.loadFeeds()
+        if (allFeeds != nil ) {
+            feedsByDay = Array((allFeeds?.values)!)
+        }else {
+            feedsByDay = [[Feed]]()
         }
-        feedsByDay = [feedsForToday]
-        
+        feedsByDay = feedsByDay.sorted(by: { $0[0].timeOfFeed > $1[0].timeOfFeed })
     }
 }

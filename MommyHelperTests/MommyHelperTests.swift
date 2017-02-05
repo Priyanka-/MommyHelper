@@ -36,20 +36,9 @@ class MommyHelperTests: XCTestCase {
     //MARK: Feed Class Tests
     // Confirm that the Feed initializer returns a Feed object when passed valid parameters.
     func testFeedInitializationSucceeds() {
-        // Zero feeds
-        let zeroFeeds = Feed.init(numberOfFeeds : 0)
+        // valid time of feed
+        let zeroFeeds = Feed.init(timeOfFeed : Date())
         XCTAssertNotNil(zeroFeeds)
-        
-        // positive feeds
-        let positiveFeeds = Feed.init(numberOfFeeds : 9)
-        XCTAssertNotNil(positiveFeeds)
     }
     
-    // Confirm that the Feed initialier returns nil when passed a negative feed
-    func testFeedInitializationFails() {
-        // Negative feeds
-        let negativeFeeds = Feed.init(numberOfFeeds : -1)
-        XCTAssertNil(negativeFeeds)
-
-    }
 }

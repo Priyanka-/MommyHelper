@@ -17,8 +17,8 @@
 		DB4089BB1E43B54800231BA5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BA1E43B54800231BA5 /* Feed.swift */; };
 		DB4089BD1E44056200231BA5 /* FeedHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BC1E44056200231BA5 /* FeedHistoryTableViewController.swift */; };
 		DB4089BF1E44071700231BA5 /* FeedHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */; };
-		DB4089C31E440BCF00231BA5 /* FeedsByDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089C21E440BCF00231BA5 /* FeedsByDay.swift */; };
 		DB4089C91E45609C00231BA5 /* DayHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */; };
+		DB4089CC1E459BB300231BA5 /* FeedPersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089CB1E459BB300231BA5 /* FeedPersister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		DB4089BA1E43B54800231BA5 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		DB4089BC1E44056200231BA5 /* FeedHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHistoryTableViewController.swift; sourceTree = "<group>"; };
 		DB4089BE1E44071700231BA5 /* FeedHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedHistoryTableViewCell.swift; sourceTree = "<group>"; };
-		DB4089C21E440BCF00231BA5 /* FeedsByDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsByDay.swift; sourceTree = "<group>"; };
 		DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHistoryTableViewController.swift; sourceTree = "<group>"; };
+		DB4089CB1E459BB300231BA5 /* FeedPersister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPersister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,7 @@
 		DB4089871E42FD1100231BA5 /* MommyHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DB4089CA1E459B9D00231BA5 /* Data */,
 				DB4089881E42FD1100231BA5 /* AppDelegate.swift */,
 				DB4089C41E440BDA00231BA5 /* Model */,
 				DB4089C61E440BFB00231BA5 /* View */,
@@ -141,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				DB4089BA1E43B54800231BA5 /* Feed.swift */,
-				DB4089C21E440BCF00231BA5 /* FeedsByDay.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,6 +162,14 @@
 				DB40898A1E42FD1100231BA5 /* FirstViewController.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DB4089CA1E459B9D00231BA5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DB4089CB1E459BB300231BA5 /* FeedPersister.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,10 +312,10 @@
 				DB4089BD1E44056200231BA5 /* FeedHistoryTableViewController.swift in Sources */,
 				DB4089BF1E44071700231BA5 /* FeedHistoryTableViewCell.swift in Sources */,
 				DB4089C91E45609C00231BA5 /* DayHistoryTableViewController.swift in Sources */,
+				DB4089CC1E459BB300231BA5 /* FeedPersister.swift in Sources */,
 				DB4089BB1E43B54800231BA5 /* Feed.swift in Sources */,
 				DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */,
 				DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */,
-				DB4089C31E440BCF00231BA5 /* FeedsByDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +566,7 @@
 				DB4089B11E42FD1100231BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB4089B21E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +575,7 @@
 				DB4089B41E42FD1100231BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB4089B51E42FD1100231BA5 /* Build configuration list for PBXNativeTarget "MommyHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +584,7 @@
 				DB4089B71E42FD1100231BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
