@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4089881E42FD1100231BA5 /* AppDelegate.swift */; };
-		DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40898A1E42FD1100231BA5 /* FirstViewController.swift */; };
+		DB40898B1E42FD1100231BA5 /* RecordFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40898A1E42FD1100231BA5 /* RecordFeedViewController.swift */; };
 		DB4089901E42FD1100231BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB40898E1E42FD1100231BA5 /* Main.storyboard */; };
 		DB4089921E42FD1100231BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4089911E42FD1100231BA5 /* Assets.xcassets */; };
 		DB4089951E42FD1100231BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4089931E42FD1100231BA5 /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		DB4089851E42FD1100231BA5 /* MommyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MommyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4089881E42FD1100231BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB40898A1E42FD1100231BA5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DB40898A1E42FD1100231BA5 /* RecordFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFeedViewController.swift; sourceTree = "<group>"; };
 		DB40898F1E42FD1100231BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4089911E42FD1100231BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4089941E42FD1100231BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			children = (
 				DB4089C81E45609C00231BA5 /* DayHistoryTableViewController.swift */,
 				DB4089BC1E44056200231BA5 /* FeedHistoryTableViewController.swift */,
-				DB40898A1E42FD1100231BA5 /* FirstViewController.swift */,
+				DB40898A1E42FD1100231BA5 /* RecordFeedViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 				DB4089CE1E47A37000231BA5 /* InMemoryFeedsManipulator.swift in Sources */,
 				DB4089BB1E43B54800231BA5 /* Feed.swift in Sources */,
 				DB4089891E42FD1100231BA5 /* AppDelegate.swift in Sources */,
-				DB40898B1E42FD1100231BA5 /* FirstViewController.swift in Sources */,
+				DB40898B1E42FD1100231BA5 /* RecordFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

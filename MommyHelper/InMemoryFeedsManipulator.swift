@@ -29,7 +29,7 @@ class InMemoryFeedsManipulator {
                 if (day == currentDay && month == currentMonth && year == currentYear) {
                     feedsByDay?[date]?.append(feed)
                     found = true
-                    //TODO: cut the loop now
+                    break
                 }
             }
         } else {

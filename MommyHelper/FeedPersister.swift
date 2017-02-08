@@ -27,7 +27,8 @@ class FeedPersister {
     
     //MARK: Methods to load from persistent storage
     func loadFeeds() -> [Date : [Feed]]?{
-        return NSKeyedUnarchiver.unarchiveObject(withFile: Feed.ArchiveURL.path) as? [Date : [Feed]]
+        feedsByDays = (NSKeyedUnarchiver.unarchiveObject(withFile: Feed.ArchiveURL.path) as? [Date : [Feed]])!
+        return feedsByDays
     }
     
 }

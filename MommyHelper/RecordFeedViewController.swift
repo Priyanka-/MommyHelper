@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class FirstViewController: UIViewController {
+class RecordFeedViewController: UIViewController {
     
     var feedPersister = FeedPersister()
     var feedsByDay : [Date : [Feed]]?
@@ -18,6 +18,9 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstOutlet.layer.cornerRadius = 15
+        firstOutlet.layer.borderWidth = 5
+        firstOutlet.layer.borderColor = UIColor.purple.cgColor
         // Do any additional setup after loading the view, typically from a nib.
         feedsByDay = feedPersister.loadFeeds()
     }

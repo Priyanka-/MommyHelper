@@ -18,6 +18,16 @@ class DayHistoryTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let feed = feedsForDay[0]
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale.current
+        dateFormatter.dateStyle = DateFormatter.Style.long
+        
+        self.title = dateFormatter.string(from: feed.timeOfFeed)
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

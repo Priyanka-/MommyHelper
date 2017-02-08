@@ -9,25 +9,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Add-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MommyHelper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="RecordFeedViewController" customModule="MommyHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFit" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-80-3Qc">
-                                <rect key="frame" x="69" y="187" width="237" height="158"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="bottom" semanticContentAttribute="forceLeftToRight" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-80-3Qc">
+                                <rect key="frame" x="39" y="38" width="298" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Add feed">
+                                <color key="backgroundColor" red="1" green="0.59549339800615386" blue="0.16691595865808651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" hint="Add breastfeed" label="Add breastfeed"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title=" BreastFeed" image="breastfeeding">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.69455359115999216" green="0.34666804393885409" blue="1" alpha="0.73022117077464788" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="FHA-Ux-ej9"/>
@@ -36,7 +38,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="plus" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="firstOutlet" destination="eJM-80-3Qc" id="Z4d-lO-7pZ"/>
                     </connections>
@@ -64,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Feed History Table View Controller-->
+        <!--Baby's feed history-->
         <scene sceneID="l32-sZ-BLP">
             <objects>
                 <tableViewController id="aQN-6A-t8H" customClass="FeedHistoryTableViewController" customModule="MommyHelper" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +109,7 @@
                             <outlet property="delegate" destination="aQN-6A-t8H" id="bvh-YX-idV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dNW-Ai-bry"/>
+                    <navigationItem key="navigationItem" title="Baby's feed history" id="dNW-Ai-bry"/>
                     <connections>
                         <segue destination="ocZ-rz-GKk" kind="show" identifier="historyToDaySegue" id="2OH-Bp-75y"/>
                     </connections>
@@ -173,4 +175,8 @@
             <point key="canvasLocation" x="749.60000000000002" y="390.85457271364322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="breastfeeding" width="120" height="116"/>
+        <image name="plus" width="30" height="30"/>
+    </resources>
 </document>
