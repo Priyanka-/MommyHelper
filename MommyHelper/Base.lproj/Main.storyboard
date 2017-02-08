@@ -176,7 +176,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="breastfeeding" width="120" height="116"/>
-        <image name="plus" width="30" height="30"/>
+        <image name="breastfeeding" width="72" height="113"/>
+        <image name="plus" width="20" height="20"/>
     </resources>
 </document>
